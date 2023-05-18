@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu-container" id="menu-container">
+        <div class="menu-button" id="menu-button">
+            <span>☰</span>
+        </div>
+        <div class="menu-content" id="menu-content">
+            <div class="theme-selector">
+                <label for="theme" class="quiz-theme">Choose a quiz theme:</label>
+                <select id="theme" class="quiz-theme">
+                </select>
+            </div>
+            <div class="theme-switch-wrapper">
+                <label class="site-theme">Choose a site theme:</label>
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"></div>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="retro-tv">
+        <div class="score score-light">
+            Score: <span id="score-counter">0</span>
+        </div>
+        <div class="container">
+<div id="question" class="question-light question-dark"></div>
+          <div id="answer-buttons" class="grid-2x2"></div>
+        </div>
+    </div>
+      
+    <script src="script.js"></script>
+</body>
+</html>
